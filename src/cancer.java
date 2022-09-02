@@ -7,7 +7,7 @@ public class cancer {
         int current2 = 0;
         Random rand = new Random();
         int int_random = rand.nextInt(2);
-        for (int i = 0; i < 1000000000; i++) {
+        for (int i = 0; i < 10000000; i++) {
             if(int_random == 1){
                 current1++;
                 if(highest<current1){
