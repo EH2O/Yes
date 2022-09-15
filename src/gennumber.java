@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Random;
 public class gennumber {
     public static void main(String[] args) {
-        File fout = new File("numbers");
+        File fout = new File("numbers2");
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(fout);
@@ -16,7 +16,8 @@ public class gennumber {
         for (int i = 0; i < 1920*1080; i++) {
             x = rand.nextInt(0xffffff);
             try {
-                numb.write("" + x);
+                numb.write("" + x + "  =  ");
+                numb.write(x);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
